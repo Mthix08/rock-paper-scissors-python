@@ -3,12 +3,12 @@ choices = ["rock", "paper", "scissors"]
 cpu_choice = random.choice(choices)
 user_choice = input("Enter your choice (rock, paper, scissors): ")
 if user_choice == cpu_choice:
-    print("It's a tie!")
+    print(f"It's a tie! CPU chose {cpu_choice}.and you chose {user_choice}.")
 elif (user_choice == "rock" and cpu_choice == "scissors"):
-    print("You win!")
+    print(f"You win! You chose {user_choice} and CPU chose {cpu_choice}.")
 elif (user_choice == "paper" and cpu_choice == "rock") :
-    print("You win!")
+    print(f"You win! You chose {user_choice} and CPU chose {cpu_choice}.")
 elif (user_choice == "scissors" and cpu_choice == "paper"):
-    print("You win!")
+    print(f"You win! You chose {user_choice} and CPU chose {cpu_choice}.")
 else:
-    print("CPU wins!")
+    print(f"CPU wins! CPU chose {cpu_choice} and you chose {user_choice}.")
